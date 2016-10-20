@@ -14,12 +14,13 @@ function remoteService(method) {
 }
 
 function add() {
-    var json = {"id": "1001", "name": "Nginx"};
+    var json = JSON.stringify({id:'10001', name: 'Nginx'});
     $.ajax({
         url : "/api/rest/users",
         type : 'POST',
         data : json,
         cache : false,
+        dataType : 'json',
         contentType : 'application/json',
         success : function(text) {
             console.log("Return: " + text)
