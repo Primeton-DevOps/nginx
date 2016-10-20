@@ -40,7 +40,7 @@ function query() {
         type : 'GET',
         contentType : 'application/json',
         success : function(text) {
-            alert(text);
+            alert(JSON.stringify(text));
         },
         error: function(text) {
             alert(text);
