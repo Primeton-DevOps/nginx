@@ -39,8 +39,12 @@ function query() {
         url : "/api/rest/users",
         type : 'GET',
         contentType : 'application/json',
-        success : function(text) {
-            alert(JSON.stringify(text));
+        success : function(o) {
+            // alert(JSON.stringify(o));
+            var json = JSON.stringify(o, null, 4);
+            // $("#result").html(json);
+            console.log(json);
+            alert(json);
         },
         error: function(text) {
             alert(text);
