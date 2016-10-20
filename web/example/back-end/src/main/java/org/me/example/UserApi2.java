@@ -19,6 +19,7 @@ public class UserApi2 {
 		for (int i = 0; i < 18; i++) {
 			users.add(new User(String.valueOf(10000 + i), UUID.randomUUID().toString()));
 		}
+		System.out.println(users);
 		return users;
 	}
 	
