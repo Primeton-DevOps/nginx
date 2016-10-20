@@ -22,10 +22,12 @@ function add() {
         cache : false,
         contentType : 'application/json',
         success : function(text) {
-            alert(text);
+            console.log("Return: " + text)
+            alert("Return: " + text);
         },
         error: function(text) {
-            alert(text);
+            console.log("Error: " + text)
+            alert("Return: " + text);
         }
     });
 }
